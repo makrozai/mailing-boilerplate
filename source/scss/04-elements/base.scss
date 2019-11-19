@@ -1,0 +1,20 @@
+html{
+  font-family: "poppins";
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "dosis"
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+p{
+  font-size: 1.3em;
+  font-weight: 300;
+
+  @media #{$small-and-down} {
+    font-size: 1.1em;
+  }
+}

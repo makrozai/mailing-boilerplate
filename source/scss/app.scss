@@ -1,0 +1,56 @@
+// ========================= 
+// 00.- Vendor - import libraries of style
+// =========================
+@import "00-vendor/materialize/materialize.scss";
+@import "00-vendor/slick/slick.scss";
+@import "00-vendor/slick/slick-theme.scss";
+
+// ========================= 
+// 01.- Settings - import of global variables
+// =========================
+@import "01-settings/vars";
+
+// =========================
+// 03.- Generic -import of font
+// =========================
+@import "03-generic/dosis";
+@import "03-generic/poppins";
+@import "03-generic/icons";
+
+// =========================
+// 04.- Elements - import of elements
+// =========================
+@import "04-elements/base";
+
+// =========================
+// 05.- objects - import of objects
+// =========================
+@import "05-objects/grid";
+
+// =========================
+// 06.- component - import of component
+// =========================
+@import "06-components/navbar";
+@import "06-components/buttons";
+@import "06-components/slider-banner";
+@import "06-components/main";
+@import "06-components/clients";
+@import "06-components/title";
+@import "06-components/color-text";
+@import "06-components/play-animation";
+@import "06-components/text";
+@import "06-components/services";
+@import "06-components/user";
+@import "06-components/testimonial";
+@import "06-components/team-card";
+@import "06-components/footer";
+@import "06-components/divider";
+@import "06-components/testimonial-card";
+@import "06-components/newsletter";
+@import "06-components/skill";
+@import "06-components/wysiwyg";
+
+// =========================
+// 07.- Trumps - import of utilities
+// =========================
+@import "07-trumps/utilities";
