@@ -1,11 +1,11 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports= {
   entry:'./src/js/main.js',
   output: {
     path: __dirname + '/build',
-    filename: 'bundle.js'
+    filename: 'js/bundle.js'
   },
   devServer: {
     port: 3000
@@ -15,7 +15,7 @@ module.exports= {
       {
         test: /\.scss$/,
         use: [
-          { loader: 'style-loader' },
+          { loader: MiniCssExtractPlugin.loader },
           { loader: 'css-loader' },
           { loader: 'sass-loader' },
         ]
@@ -25,6 +25,9 @@ module.exports= {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/bundle.css'
     })
   ]
 }
