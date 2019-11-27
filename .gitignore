@@ -98,4 +98,6 @@ public/
 # locks files
 package-lock.json
 
+# Building directories
+build/
 # End of https://www.gitignore.io/api/node
